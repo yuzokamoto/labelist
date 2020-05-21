@@ -23,7 +23,7 @@ const LoginSection = styled.section`
             font-size: 80%;
         }
     }
-    > div {
+    > main {
         flex: 3;
         width: 100%;
         padding: 0 2rem;
@@ -82,14 +82,14 @@ export default class LoginPage extends React.Component {
                     <h1>Labelist</h1>
                     <h2>Task Manager</h2>
                 </header>
-                <div>
+                <main>
                     <label>USERNAME</label>
                     <input />
                     <label>PASSWORD</label>
                     <input />
                     <p>Forgot Password?</p>
-                    <button onClick={this.props.loginHandler}>LOGIN</button>
-                </div>
+                    <button onClick={this.props.logInOutHandler}>LOGIN</button>
+                </main>
             </LoginSection>
         );
     }
